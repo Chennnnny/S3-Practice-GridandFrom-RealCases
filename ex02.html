@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<style>
+body {
+    background-color: rgb(202, 202, 202);
+    font-family: Arial, sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.container {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 10% 90%;
+    border-radius: 10px;
+    
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    border-right: 2px solid rgb(218, 218, 218);
+}
+
+.top {
+    display: grid;
+    display: flex;
+    display: block;
+    border-bottom: 3px solid rgb(218, 218, 218);
+    padding: 20px;
+}
+
+.dots {
+    border-radius: 50%;
+    border: solid 2px rgb(218, 218, 218);
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+.profile {
+    border-radius: 50%;
+    border: solid 2px rgb(218, 218, 218);
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+.sent {
+    border-radius: 50%;
+    border: solid 2px rgb(218, 218, 218);
+    width: 50px;
+    height: 50px;
+}
+
+.messages {
+    border-radius: 50%;
+    border: solid 2px rgb(218, 218, 218);
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+.library {
+    border-radius: 50%;
+    border: solid 2px rgb(218, 218, 218);
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+.bottom {
+    display: flex;
+    display: block;
+    padding: 20px;
+}
+
+.right {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    padding: 20px;
+}
+
+.Inbox {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    grid-row: span 1;
+}
+
+.Inbox p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Inbox img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.conversation {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    grid-row: span 1;
+}
+
+.conversation p {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(177, 177, 177);
+}
+
+.you {
+    display: flex;
+    justify-content: space-between;
+    grid-row: span 1;
+}
+
+.user {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.user img {
+    border-radius: 50%;
+    border: solid 2px rgb(218, 218, 218);
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+.user p {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(103, 102, 102);
+    padding-left: 20px;
+}
+
+.number p {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(130, 130, 130);
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: span 1;
+}
+
+.setting p {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(103, 102, 102);
+}
+
+.setting img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="top">
+                <img class="dots" src="image/grey circle.png" alt="dots">
+                <img class="profile" src="image/profile.png" alt="profile">
+            </div>
+            <div class="bottom">
+                <img class="sent" src="image/sent.png" alt="sent">
+                <img class="messages" src="image/message.png" alt="messages">
+                <img class="library" src="image/library.png" alt="library">
+            </div>
+        </div>
+        <div class="right">
+            <div class="Inbox">
+                <p>Inbox</p>
+                <img src="image/free-search-icon-2907-thumb-removebg-preview.png" alt="search icon">
+            </div>
+            <div class="conversation">
+                <p>CONVERSATION</p>
+            </div>
+            <div class="you">
+                <div class="user">
+                    <img src="image/CEO.png" alt="profile">
+                    <p>You</p>
+                </div>
+                <div class="number">
+                    <p>5</p>
+                </div>
+            </div>
+            <div class="you">
+                <div class="user">
+                    <img src="image/CEO.png" alt="profile">
+                    <p>Mentions</p>
+                </div>
+                <div class="number">
+                    <p>2</p>
+                </div>
+            </div>
+            <div class="you">
+                <div class="user">
+                    <img src="image/CEO.png" alt="profile">
+                    <p>All</p>
+                </div>
+                <div class="number">
+                    <p>234</p>
+                </div>
+            </div>
+            <div class="you">
+                <div class="user">
+                    <img src="image/CEO.png" alt="profile">
+                    <p>Unassigned</p>
+                </div>
+                <div class="number">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="you">
+                <div class="user">
+                    <img src="image/CEO.png" alt="profile">
+                    <p>Sales</p>
+                </div>
+                <div class="number">
+                    <p>142</p>
+                </div>
+            </div>
+            <div class="you">
+                <div class="user">
+                    <img src="image/CEO.png" alt="profile">
+                    <p>Support</p>
+                </div>
+                <div class="number">
+                    <p>4</p>
+                </div>
+            </div>
+            <div class="you">
+                <div class="user">
+                    <img src="image/CEO.png" alt="profile">
+                    <p>Global Sales</p>
+                </div>
+                <div class="number">
+                    <p>23</p>
+                </div>
+            </div>
+            <div class="setting">
+                <p>Show 20 hidden</p>
+                <img src="image/settings-icon-13-removebg-preview.png" alt="setting">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

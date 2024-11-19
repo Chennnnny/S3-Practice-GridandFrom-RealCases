@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<style>
+body {
+    background-color: rgb(151, 164, 190);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    background-color: white;
+    grid-template-rows: 260px repeat(3, auto);
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.left {
+    display: flex;
+}
+
+.description {
+    display: block;
+}
+
+.description p {
+    font-size: 22px;
+}
+
+.description p2 {
+    font-size: 20px;
+    color: grey;
+}
+
+.amongus {
+    width: 150px;
+    height: 150px;
+}
+
+.threedots {
+    width: 70px;
+    height: 70px;
+}
+
+.video {
+    display: flex;
+    justify-content: center; 
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+
+.video img{
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+}
+
+.activity_button {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    padding: 20px 50px 20px 50px;
+}
+
+.left_button {
+    display: flex;
+    gap: 20px;
+}
+
+.left_button img {
+    width: 40px;
+    height: 40px;
+}
+
+.left_button p {
+    font-size: 20px;
+    color: grey;
+}
+
+.right_button {
+    display: flex;
+    gap: 20px;
+}
+
+.right_button img {
+    width: 40px;
+    height: 40px
+}
+
+.right_button p {
+    font-size: 20px;
+    color: grey;
+}
+
+.UserProfile {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px 50px 20px;
+}
+
+.User {
+    display: flex;
+    align-items: center;
+}
+
+.User p {
+    font-size: 25px;
+    color: grey;
+}
+
+.User img {
+    width: 130px;
+    height: 130px;
+    padding-right: 50px;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+}
+
+.icons img {
+    width: 100px;
+    height: 100px;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="left">
+                <img class="amongus" src="image/hd-red-among-us-crewmate-shhh-logo-png-733961695122293j3xlmaczyk-removebg-preview.png" alt="ProfilePicture">
+                <div class="description">
+                    <p><Strong>Jacob Jones</Strong> shared <strong>jack</strong>'s <strong>video</strong></p>
+                    <p2>Yesterday at 08:44 PM</p2>            
+                </div>
+            </div>
+            <div class="right">
+                <img class="threedots" src="image/three-horizontal-dots-menu-flat-color-ui-icon-vector-43327709-removebg-preview.png" alt="three dots">
+            </div>
+        </div>
+        <div class="video">
+            <img src="image/Humble.jpg" alt="Video">
+        </div>
+        <div class="activity_button">
+            <div class="left_button">
+                <img src="image/GreyHeart.png" alt="heart">
+                <p>45 likes</p>
+                <img src="image/CommentIcon.png" alt="comment icon">
+                <p>2 comments</p>
+            </div>
+            <div class="right_button">
+                <img src="image/ShareIcon.png" alt="share icon">
+                <p>share</p>
+            </div>
+        </div>
+        <div class="UserProfile">
+            <div class="User">
+                <img src="image/CEO.png" alt="Your Profile Picture">
+                <p>Write a comment...</p>
+            </div>
+            <div class="icons">
+                <img src="image/SmileyFace.png" alt="smiley face">
+                <img src="image/GIF icon.png" alt="gif">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

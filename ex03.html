@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<style>
+body {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 20%;
+    background-color: rgb(219, 219, 219);
+    font-family: Arial, sans-serif;
+    grid-gap: 20px;
+}
+
+.left {
+    display: grid;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.cart {
+    display: grid;
+    grid-row: span 1;
+}
+
+.cart p {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(186, 186, 186);
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid grey;
+    grid-row: span 2;
+}
+
+.item {
+    display: flex;
+}
+
+.description {
+    display: block;
+}
+
+.description p {
+    font-size: 22px;
+}
+
+.description p2 {
+    font-size: 20px;
+    color: grey;
+}
+
+.Picture {
+    width: 150px;
+    height: 150px;
+    padding-right: 20px;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.right {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+</style>
+<body>
+    <div class="left">
+        <div class="cart">
+            <p>Cart</p>
+        </div>
+        <div class="list">
+            <div class="item">
+                <img class="Picture" src="image/T-shirt.bmp" alt="item">
+                <div class="description">
+                    <p>Relaxed Fit T-shirt</p>
+                    <p2>$12.99 | </p2> <p2 style="color: rgb(153, 241, 19)">In Stock</p2>
+                </div>
+            </div>
+            <div class="price">
+                <p>$12.99</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item">
+                <img class="Picture" src="image/Nylon Sports Cap.bmp" alt="item">
+                <div class="description">
+                    <p>Nylon Sports Cap</p>
+                    <p2>$14.99 | Available in 2 days</p2>
+                </div>
+            </div>
+            <div class="price">
+                <p>$14.99</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item">
+                <img class="Picture" src="image/sneaker.bmp" alt="item">
+                <div class="description">
+                    <p>Sneakers</p>
+                    <p2>$34.99 | </p2> <p2 style="color: rgb(190, 6, 6)">Out of Stock</p2>
+                </div>
+            </div>
+            <div class="price">
+                <p>$34.99</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item">
+                <img class="Picture" src="image/Slim Fit Suit Vest.bmp" alt="item">
+                <div class="description">
+                    <p>Slim Fit Suit Vest</p>
+                    <p2>$17.99 | </p2><p2 style="color: rgb(153, 241, 19)">In Stock</p2>
+                </div>
+            </div>
+            <div class="price">
+                <p>$14.99</p>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <h1>Reciept</h1>
+    </div>
+</body>
+</html>
